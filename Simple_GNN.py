@@ -46,7 +46,6 @@ num_classes = 2
 
 model = SimpleGNN(num_features, hidden_channels, num_classes)
 
-# You should replace the following dummy data with your actual graph data
 x = torch.rand((num_nodes, num_features))  # Node features
 edge_index = torch.tensor([[0, 1, 1, 2], [1, 0, 2, 1]], dtype=torch.long)  # Adjacency list
 y = torch.tensor([0, 1, 0], dtype=torch.long)  # Target labels
